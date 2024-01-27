@@ -6,6 +6,8 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+import DataPage from './Views/DataPage';
 import Recipes from './Views/Recipes';
 import Home from './Views/Home';
 import Drinks from './Views/Drinks';
@@ -32,6 +34,10 @@ function App() {
             <li>
               <Link to="/inventory">Inventory</Link>
             </li>
+            <li>
+              <Link to="/datapage">DataPage</Link>
+            </li>
+            
 
           </ul>
         </nav>
@@ -46,6 +52,8 @@ function App() {
           <Route path="/drinks" element={<Drinks />}>
           </Route>
           <Route path="/inventory" element={<Inventory />}>
+          </Route>
+          <Route path="/datapage" element={<DataPage />}>
           </Route>
 
         </Routes>
