@@ -10,11 +10,9 @@ const Inventory = () => {
     // State to manage form input
     const [itemBrand, setItemBrand] = useState('');
     const [type, setType] = useState('');
-
     // Function to handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         try {
             // Use the 'insert' method to add a new row to the "Inventory" table
             const { data, error } = await supabase
@@ -38,7 +36,6 @@ const Inventory = () => {
         }
         getInventory();
     };
-
     const [inventory, setInventory] = useState([]);
 
     useEffect(() => {
@@ -50,12 +47,16 @@ const Inventory = () => {
         console.log(data);
         setInventory(data);
     }
-
-
-
     return (
+        // <div>
+        //      <form className='inventory'>
+        //         <input type='text' className='item-brand' onChange={handleChange}></input>
+        //         <input type='text' className='item-type' onChange={handleChange}></input>
+        //         <button type='submit' className='submit-button'>Add Item</button>
+        //      </form>
+        // </div>
         <div>
-            <h2>Add New Inventory Item</h2>
+             <h2>Add New Inventory Item</h2>
             <form onSubmit={handleSubmit}>
                 <label>
                     Item Name:
@@ -79,6 +80,6 @@ const Inventory = () => {
             </ul>
         </div>
     )
-}
 
+    }
 export default Inventory
