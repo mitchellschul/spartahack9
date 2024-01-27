@@ -3,6 +3,9 @@ import '../CSS/DrinkCard.css'
 
 
 const DrinkCard = (props) => {
+
+    const rating = "*" * props.rating
+
     return (
 
 
