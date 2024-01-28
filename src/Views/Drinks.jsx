@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import DrinkCard from '../Components/DrinkCard'
 
-
+import axios from 'axios';
 import "../CSS/Drinks.css"
 
 
@@ -15,7 +15,10 @@ import { Routes, Route, Link, useParams } from 'react-router-dom';
 
 
 
+
+
 const Drinks = () => {
+
 
 
     const supabaseUrl = 'https://unbgguntihzhmkjdmxnc.supabase.co';
@@ -28,11 +31,11 @@ const Drinks = () => {
     const [makeDrinks, setMakeDrinks] = useState([]);
 
     useEffect(() => {
-        getMakeDrinks();
 
-        setTimeout(function () {
-            //do what you need here
-        }, 2000);
+
+        getDrinks();
+        getInventory();
+        getMakeDrinks();
 
 
     }, []);
@@ -52,6 +55,8 @@ const Drinks = () => {
         console.log(data)
         console.log("edited ", temp)
         setInventory(temp);
+
+        // getMakeDrinks();
         // console.log(inventory);
     }
 
@@ -85,9 +90,9 @@ const Drinks = () => {
             {/* <button onClick={test}>Drinks</button> */}
 
             <div class="container">
-                {makeDrinks.map((drink, index) => (
+                {drinks.map((drink, index) => (
 
-                    <Link to={`recipes/${drink.DrinkName}`}><DrinkCard img={`${drink.Img}`} rating={`${drink.Rating}`} name={`${drink.DrinkName}`} /></Link>
+                    <Link to={`../recipes/:${drink.DrinkName}`}><DrinkCard img={`${drink.Img}`} rating={`${drink.Rating}`} name={`${drink.DrinkName}`} /></Link>
                 ))}
                 {/* <Routes>
                     <Route path="/recipes/:postId" component={RecipePost} />
