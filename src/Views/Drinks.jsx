@@ -57,9 +57,9 @@ const Drinks = () => {
     return (
         <div>
 
-            <header>
-                <h1>Your Recommended Drinks</h1>
-            </header>
+            
+            <h1 className='recommendations-title'>Your Recommended Drinks</h1>
+            
 
             <div class="filter-bar">
 

@@ -3,10 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-=======
     "@react-native-async-storage/async-storage": "^1.21.0",
->>>>>>> 23e240be9de6487c045fc0808b7c24d2cb5f735f
     "@supabase/supabase-js": "^2.39.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
