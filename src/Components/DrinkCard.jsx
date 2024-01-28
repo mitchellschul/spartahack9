@@ -4,13 +4,12 @@ import '../CSS/DrinkCard.css'
 
 const DrinkCard = (props) => {
 
-    const rating = "*" * props.rating
 
     return (
 
 
         <div class="card">
-            <img src={props.img} alt="Card Image" />
+            <img src={props.img} alt={props.name} />
             <div class="overlay">
                 <div class="rating">{props.rating}</div>
             </div>

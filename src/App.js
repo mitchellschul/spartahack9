@@ -13,8 +13,10 @@ import Home from './Views/Home';
 import Drinks from './Views/Drinks';
 import Inventory from './Views/Inventory';
 
-
 function App() {
+
+
+
   return (
 
     <Router>
@@ -37,7 +39,7 @@ function App() {
             <li>
               <Link to="/datapage">DataPage</Link>
             </li>
-            
+
 
           </ul>
         </nav>
