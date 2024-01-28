@@ -1,23 +1,34 @@
 import React from 'react'
-import '../CSS/DrinkCard.css'
+import '../Css/DrinkCard.css'
 
 
 const DrinkCard = (props) => {
 
-    const rating = "*" * props.rating
 
     return (
 
-
         <div class="card">
-            <img src={props.img} alt="Card Image" />
-            <div class="overlay">
-                <div class="rating">{props.rating}</div>
+            <div class='overlay'></div>
+            <img
+                class="card__background"
+                src={props.img}
+                alt="img"
+            />
+            <div class="inner-border">
             </div>
-            <div class="description">
-                <p>{props.name}</p>
+
+            <div class="drink-text">
+                <div class="drink-name">
+                    {props.name}
+                </div>
+                <div class="drink-description">
+                    bitter - herbal - sweet
+                </div>
+
             </div>
-        </div>
+        </div >
+
+
 
 
     )

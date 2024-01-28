@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-container{
+    background-color: rgb(32, 32, 32);
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    right: 0;
+}
+
+li{
+    margin-right: 8px;
+    text-decoration: none;
+    color: #eee;
+}
+
+li a{
+    color: #eee;
+    text-decoration: none;
+}
