@@ -10,6 +10,7 @@ p{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
   }
   
 h1 {
@@ -25,7 +26,7 @@ ul {
 li {
     /*border-bottom: 1px solid #ddd;*/
     padding: 10px 0;
-    color: black;
+    color: white;
     text-align: center;
   }
   
@@ -58,4 +59,7 @@ form{
 button{
     border-radius: 0%;
     border-width: 0cap;
+  }
+  .inventory-title{
+    margin-top: 20vh;
   }
