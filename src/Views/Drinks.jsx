@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import DrinkCard from '../Components/DrinkCard'
-import "../CSS/Drinks.css"
+import "../Css/Drinks.css"
 import Placeholder from '../Images/placeholder.jpg'
 
 import { createClient } from '@supabase/supabase-js'
