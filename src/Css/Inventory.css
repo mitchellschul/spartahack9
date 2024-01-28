@@ -23,7 +23,9 @@ h1 {
 ul {
     list-style-type: none;
     padding: 0;
-  
+    margin-left: 10px;
+    margin-right: 10px;
+
   }
 
 .brands-col{
@@ -35,6 +37,8 @@ li {
     padding: 10px 0;
     color: white;
     text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
 li:last-child {
@@ -69,4 +73,19 @@ button{
   }
   .inventory-title{
     margin-top: 20vh;
+    margin-bottom: 0px;
+  }
+  .inventory-desc{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+  }
+  .drinks-button{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 30px;
+    margin-top: 20vh;
+  }
+  .to-drinks{
+    text-align: center;
   }
