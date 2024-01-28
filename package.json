@@ -46,6 +46,7 @@
   },
   "devDependencies": {
     "@types/events": "^3.0.3",
-    "@types/node": "^20.11.8"
+    "@types/node": "^20.11.8",
+    "wrangler": "^3.25.0"
   }
 }

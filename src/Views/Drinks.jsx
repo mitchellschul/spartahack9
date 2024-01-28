@@ -28,15 +28,19 @@ const Drinks = () => {
     const [makeDrinks, setMakeDrinks] = useState([]);
 
     useEffect(() => {
-        getDrinks();
-        getInventory();
         getMakeDrinks();
+
+        setTimeout(function () {
+            //do what you need here
+        }, 2000);
+
 
     }, []);
 
     async function getDrinks() {
         const { data } = await supabase.from("Drinks").select();
         setDrinks(data);
+        console.log(data)
     }
 
     async function getInventory() {
@@ -45,12 +49,19 @@ const Drinks = () => {
         data.forEach(element => {
             temp.push(element.Type);
         });
+        console.log(data)
+        console.log("edited ", temp)
         setInventory(temp);
         // console.log(inventory);
     }
 
     async function getMakeDrinks() {
+        getDrinks();
+        getInventory();
+
         let temp = [];
+        console.log("DRINKS", drinks)
+        console.log("INVENTORY", inventory)
         drinks.forEach(element => {
             // console.log("drinks ", element.MainAlc, inventory);
             if (inventory.includes(element.MainAlc)) {
@@ -59,17 +70,25 @@ const Drinks = () => {
             }
         });
         setMakeDrinks(temp);
-        console.log(temp)
-        console.log(temp);
+
     }
+
 
     return (
         <div>
 
             <header>
-                <h1>Your Drink Recomendations</h1>
+                <h1 className='recommendations-title'>Your Recommended Drinks</h1>
             </header>
 
+            <div class="filter-bar">
+
+                Filter: <select>
+                    <option value="all">All</option>
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                </select>
+            </div>
 
             {/* <button onClick={test}>Drinks</button> */}
 

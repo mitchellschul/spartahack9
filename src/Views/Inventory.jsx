@@ -74,7 +74,7 @@ const Inventory = () => {
             <ul id="brands-list">
                 {inventory.map((inv, index) => (
                     // <li key={index}>{`${drink.DrinkName} - ${drink.MainAlc}`}</li>
-                    <li key={index}>{`${inv.Brand} - ${inv.Type}`}</li>
+                    <li key={index}>{`${inv.Brand} - ${inv.Type} `}<button type='button'>delete</button></li>
                 ))}
             </ul>
         </div>
