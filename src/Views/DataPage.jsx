@@ -4,15 +4,16 @@ import "../../src/CSS/DataPage.css";
 const DataPage = () => {
     return (
         <div className="fade-in">
-            <h1>Data</h1>
+            <div className ="h1">Data</div>
             <div>
+                <p>Drinks</p>
                 <div className='drink-chart'>
-                    <p>Drink's</p>
                     <p>Chart</p>
                 </div>
-            <div className="text">
-                <h2>Words</h2>
-            </div></div>
+                <div className="text">
+                    <div className='h2'>Words</div>
+                </div>
+            </div>
         </div>
     );
 }
