@@ -11,7 +11,7 @@ body {
     background-size: cover;
   }
   
-  .brand-list {
+.brand-list {
     max-width: 600px;
     margin: 20px auto;
     background-color: #fff;
@@ -20,50 +20,50 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  h1 {
+h1 {
     color: #333;
     background-color: white;
   }
   
-  ul {
+ul {
     list-style-type: none;
     padding: 0;
   }
   
-  li {
+li {
     /*border-bottom: 1px solid #ddd;*/
     padding: 10px 0;
     color: black;
     text-align: center;
   }
   
-  li:last-child {
+li:last-child {
     border-bottom: none;
   }
   
   /* Style the brand name and type */
-  .brand-name {
+.brand-name {
     font-weight: bold;
     color: #0066cc;
   }
   
-  .alcohol-type {
+.alcohol-type {
     color: #666;
     margin-left: 5px;
   }
-  input{
+input{
     border-width: 0cap;
     background-color: grey;
     color: black;
   }
-  label{
+label{
     color: white;
     font-family:'Courier New', Courier, monospace;
   }
-  form{
+form{
     text-align: center;
   }
-  button{
+button{
     border-radius: 0%;
     border-width: 0cap;
   }
