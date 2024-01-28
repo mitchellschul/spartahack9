@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../src/Css/recipe.css"
+import "../../src/CSS/recipe.css"
 
 let text1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elit auctor, placerat velit nec, vestibulum velit. Donec convallis eget velit ac lobortis.';
 //top line
