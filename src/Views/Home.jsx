@@ -1,6 +1,5 @@
 import React from 'react'
-import "../../src/CSS/home.css"
-import logo from "../Images/site_logo.png"
+import "../CSS/home.css"
 const Home = () => {
     return (
         <div className='background'>

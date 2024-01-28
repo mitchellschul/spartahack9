@@ -1,4 +1,6 @@
 import React from 'react'
+import "../../src/CSS/DataPage.css"
+// import "../CSS"
 import "../CSS/DataPage.css"
 const DataPage = () => {
     return (

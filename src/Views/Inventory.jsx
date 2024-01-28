@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import "../Css/Inventory.css"
+import "../CSS/Inventory.css"
 import { createClient } from '@supabase/supabase-js'
 const Inventory = () => {
     // Initialize Supabase client with your Supabase URL and API key
