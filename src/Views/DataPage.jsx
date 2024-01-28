@@ -1,5 +1,5 @@
 import React from 'react'
-import "../../src/Css/DataPage.css"
+import "../../src/CSS/DataPage.css"
 // import "../CSS"
 const DataPage = () => {
     return (
