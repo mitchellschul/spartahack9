@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import DrinkCard from '../Components/DrinkCard'
+import Modal from '../Components/Modal';
 
 import axios from 'axios';
 import "../CSS/Drinks.css"
+
 
 
 import { createClient } from '@supabase/supabase-js'
@@ -29,6 +31,9 @@ const Drinks = () => {
     const [drinks, setDrinks] = useState([]);
     const [inventory, setInventory] = useState([]);
     const [makeDrinks, setMakeDrinks] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
+    
+
 
     useEffect(() => {
 
@@ -36,7 +41,6 @@ const Drinks = () => {
         getDrinks();
         getInventory();
         getMakeDrinks();
-
 
     }, []);
 
@@ -99,13 +103,15 @@ const Drinks = () => {
 
             <div class="container">
                 {drinks.map((drink, index) => (
-
-                    <Link to={`../recipes/:${drink.DrinkName}`}><DrinkCard img={`${drink.Img}`} rating={`${drink.Rating}`} name={`${drink.DrinkName}`} /></Link>
+                    <button onClick={() => setOpenModal(true)}><DrinkCard img={`${drink.Img}`} rating={`${drink.Rating}`} name={`${drink.DrinkName}`}> 
+                        </DrinkCard></button>
+                    
                 ))}
+                <Modal open={openModal} onClose ={() => setOpenModal(false)}/>
                 {/* <Routes>
                     <Route path="/recipes/:postId" component={RecipePost} />
                 </Routes> */}
-
+                 
             </div>
 
         </div>

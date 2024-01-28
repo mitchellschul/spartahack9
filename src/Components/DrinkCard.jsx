@@ -1,16 +1,14 @@
-import React from 'react'
-import '../CSS/DrinkCard.css'
+import React from 'react';
+import '../CSS/DrinkCard.css';
 
 
 const DrinkCard = (props) => {
-
-
     return (
-
+        <div>
         <div class="card">
             <div class='overlay'></div>
             <img
-                class="card__background"
+                class=""
                 src={props.img}
                 alt="img"
             />
@@ -27,11 +25,7 @@ const DrinkCard = (props) => {
 
             </div>
         </div >
-
-
-
-
+      </div>
     )
-}
-
+    }
 export default DrinkCard

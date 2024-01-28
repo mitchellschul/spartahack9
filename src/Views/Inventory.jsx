@@ -100,7 +100,7 @@ const Inventory = () => {
                 <button type="submit">Add Inventory Item</button>
             </form>
 
-            <ul id="brands-list">
+            <ul id="brands-list" class="brands-col">
                 {inventory && inventory.map((inv) => (
                     <li key={inv.id}>
                         {`${inv.Brand} - ${inv.Type} `}

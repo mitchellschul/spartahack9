@@ -11,6 +11,8 @@ p{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: flex;
+    
   }
   
 h1 {
@@ -21,7 +23,12 @@ h1 {
 ul {
     list-style-type: none;
     padding: 0;
+  
   }
+
+.brands-col{
+  flex-direction: column;
+}
   
 li {
     /*border-bottom: 1px solid #ddd;*/
