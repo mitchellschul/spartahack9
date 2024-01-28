@@ -83,9 +83,17 @@ const Drinks = () => {
         <div>
 
             <header>
-                <h1>Your Drink Recomendations</h1>
+                <h1 className='recommendations-title'>Your Recommended Drinks</h1>
             </header>
 
+            <div class="filter-bar">
+
+                Filter: <select>
+                    <option value="all">All</option>
+                    <option value="category1">Category 1</option>
+                    <option value="category2">Category 2</option>
+                </select>
+            </div>
 
             {/* <button onClick={test}>Drinks</button> */}
 
