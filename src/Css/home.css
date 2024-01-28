@@ -1,12 +1,13 @@
-.background{
-    background-image: url("https://www.tilelook.com/system/tile_picture/resource/8071521/d3d_default_M39S_2.jpg");
-    background-size: 100%;
+body{
+    background-image: url('https://www.tilelook.com/system/tile_picture/resource/8071521/d3d_default_M39S_2.jpg');
 }
-.about-section{
+.about-text{
     text-align: center justify;
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    font-size: 25px;
+    font-size: 20px;
+    padding: 30px;
+    margin-bottom: 45vh;
 }
 .welcome-text
 {
@@ -22,20 +23,26 @@ h2
 {
     text-align: center;
     font-size: 35px;
-    margin-top: 25vw;
+    margin-top: 45vw;
     color: white;
 }
 img{
     margin-top: 0%;
     padding:0%;
-    animation: fadeIn 10s;
 }
-.fade-in{
-    animation: fadeIn 5s;
+.welcome-div{
+    margin-top: 15vw;
+}
+html{
+    scroll-behavior: smooth;
+}
+.scroll-button{
+    margin-top: 200px;
+    margin-bottom: 0px;
+    font-size: 35px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-}
-@keyframes fadeIn {
-    0% { opacity: 0;}
-    100% {opacity: 1;}
+    margin-left: 41vw;
 }
 
