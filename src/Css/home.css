@@ -7,7 +7,7 @@ body{
     background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
     padding: 30px;
-    margin-bottom: 45vh;
+    margin-bottom: 20vh;
 }
 .welcome-text
 {
@@ -43,6 +43,15 @@ html{
     color: white;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    margin-left: 41vw;
 }
-
+.inventory-button{
+    margin-bottom: 20vh;
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+.scroll-btn{
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    color: white;
+}
