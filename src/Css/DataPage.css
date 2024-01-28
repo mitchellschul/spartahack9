@@ -1,7 +1,47 @@
-.fade-in{
-    animation: fadeIn 5s;
+.body {
+    background-color: white;
 }
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: black;
+}
+
+.h2 {
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.drink-chart {
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.fade-in {
+    animation: fadeIn 5s;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+}
+
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0; /* Set to 1 at the beginning */
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

@@ -1,24 +1,21 @@
-import React from 'react'
-import "../../src/CSS/DataPage.css"
-// import "../CSS"
-import "../CSS/DataPage.css"
+import React from 'react';
+import "../../src/CSS/DataPage.css";
+
 const DataPage = () => {
     return (
-        <div style={{
-            backgroundColor: 'black',
-            color: 'white',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100vh' // This makes sure your div takes up the full height of the view
-        }}>
-            <div class="fade-in"><div>Data</div></div>
-
-            <div>Drink's</div>
-            <div>Chart</div>
+        <div className="fade-in">
+            <div className ="h1">Data</div>
+            <div>
+                <p>Drinks</p>
+                <div className='drink-chart'>
+                    <p>Chart</p>
+                </div>
+                <div className="text">
+                    <div className='h2'>Words</div>
+                </div>
+            </div>
         </div>
-    )
+    );
 }
 
 export default DataPage;
