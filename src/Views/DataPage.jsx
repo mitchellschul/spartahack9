@@ -4,9 +4,8 @@ import "../../src/CSS/DataPage.css";
 const DataPage = () => {
     return (
         <div className="fade-in">
-            <div className ="h1">Data</div>
-            <div>
-                <p>Drinks</p>
+            <div className ="h1">Data
+                <p>Drinks</p> </div>
                 <div className='drink-chart'>
                     <p>Chart</p>
                 </div>
@@ -14,7 +13,7 @@ const DataPage = () => {
                     <div className='h2'>Words</div>
                 </div>
             </div>
-        </div>
+
     );
 }
 
