@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import DrinkCard from '../Components/DrinkCard'
+import Modal from '../Components/Modal';
 
-
+import axios from 'axios';
 import "../CSS/Drinks.css"
+
 
 
 import { createClient } from '@supabase/supabase-js'
@@ -15,7 +17,10 @@ import { Routes, Route, Link, useParams } from 'react-router-dom';
 
 
 
+
+
 const Drinks = () => {
+
 
 
     const supabaseUrl = 'https://unbgguntihzhmkjdmxnc.supabase.co';
@@ -26,14 +31,16 @@ const Drinks = () => {
     const [drinks, setDrinks] = useState([]);
     const [inventory, setInventory] = useState([]);
     const [makeDrinks, setMakeDrinks] = useState([]);
+    const [openModal, setOpenModal] = useState(false);
+    
+
 
     useEffect(() => {
+
+
+        getDrinks();
+        getInventory();
         getMakeDrinks();
-
-        setTimeout(function () {
-            //do what you need here
-        }, 2000);
-
 
     }, []);
 
@@ -52,6 +59,8 @@ const Drinks = () => {
         console.log(data)
         console.log("edited ", temp)
         setInventory(temp);
+
+        // getMakeDrinks();
         // console.log(inventory);
     }
 
@@ -81,26 +90,20 @@ const Drinks = () => {
                 <h1 className='recommendations-title'>Your Recommended Drinks</h1>
             </header>
 
-            <div class="filter-bar">
-
-                Filter: <select>
-                    <option value="all">All</option>
-                    <option value="category1">Category 1</option>
-                    <option value="category2">Category 2</option>
-                </select>
-            </div>
 
             {/* <button onClick={test}>Drinks</button> */}
 
             <div class="container">
-                {makeDrinks.map((drink, index) => (
-
-                    <Link to={`recipes/${drink.DrinkName}`}><DrinkCard img={`${drink.Img}`} rating={`${drink.Rating}`} name={`${drink.DrinkName}`} /></Link>
+                {drinks.map((drink, index) => (
+                    <button onClick={() => setOpenModal(true)}><DrinkCard img={`${drink.Img}`} rating={`${drink.Rating}`} name={`${drink.DrinkName}`}> 
+                        </DrinkCard></button>
+                    
                 ))}
+                <Modal open={openModal} onClose ={() => setOpenModal(false)}/>
                 {/* <Routes>
                     <Route path="/recipes/:postId" component={RecipePost} />
                 </Routes> */}
-
+                 
             </div>
 
         </div>

@@ -11,6 +11,7 @@ import DataPage from './Views/DataPage';
 import Home from './Views/Home';
 import Drinks from './Views/Drinks';
 import Inventory from './Views/Inventory';
+import Recipes from './Views/Recipes';
 
 function App() {
 
@@ -46,6 +47,8 @@ function App() {
             renders the first one that matches the current URL. */}
       <Routes>
         <Route path="/home" element={<Home />}>
+        </Route>
+        <Route path="/recipes" element={<Recipes />}>
         </Route>
 
         <Route path="/drinks" element={<Drinks />}>

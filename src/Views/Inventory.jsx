@@ -85,7 +85,8 @@ const Inventory = () => {
 
     return (
         <div>
-            <h2 className='inventory-title'>Add New Inventory Item</h2>
+            <h2 className='inventory-title'>Stock Your Inventory</h2>
+            <p className='inventory-desc'>Check your bar to see what alcohols you have stocked and input them below!</p>
             <form onSubmit={handleSubmit}>
                 <label>
                     Item Name:
@@ -100,7 +101,7 @@ const Inventory = () => {
                 <button type="submit">Add Inventory Item</button>
             </form>
 
-            <ul id="brands-list">
+            <ul id="brands-list" class="brands-col">
                 {inventory && inventory.map((inv) => (
                     <li key={inv.id}>
                         {`${inv.Brand} - ${inv.Type} `}
@@ -108,6 +109,9 @@ const Inventory = () => {
                     </li>
                 ))}
             </ul>
+            <div className='to-drinks'>
+                <a href='./Drinks'><button className='drinks-button'>Stocked? Click Me To See What Drinks We Reccommend!</button></a>
+            </div>
         </div>
     );
 };

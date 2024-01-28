@@ -1,12 +1,18 @@
 import React from 'react'
 import "../../src/CSS/recipe.css"
+import { useParams } from 'react-router-dom';
 
 let text1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elit auctor, placerat velit nec, vestibulum velit. Donec convallis eget velit ac lobortis.';
 //top line
 let text2 = 'More information about the recipe.';
 //bottom line 
 let imageUrl = 'logo512.png';
-const Recipes = () => {
+const Recipes = (props) => {
+
+  const { drink } = useParams();
+  console.log(drink)
+
+
   return (
     <div class="recipeBackground">
       <div className="App">
