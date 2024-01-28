@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import DrinkCard from '../Components/DrinkCard'
 
 
-import "../Css/Drinks.css"
+import "../CSS/Drinks.css"
 
 
 import { createClient } from '@supabase/supabase-js'
